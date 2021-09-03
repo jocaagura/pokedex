@@ -1,0 +1,46 @@
+name: pokedex
+description: Pokedex en pragma.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.3
+  shared_preferences: ^2.0.6    # User preferences
+  rxdart: ^0.27.1               # streams advanced driver - enable multilistener for dart streams
+  sqflite: ^2.0.0+3             # Management of sql
+  animate_do: ^2.0.0            # Beautiful simple animations helper
+  dio: ^4.0.0                   # http request manager
+  cached_network_image: ^3.1.0  # cached url images
+  google_fonts: ^2.1.0          # Only for demostration purposes (For producction use embebed fonts)
+  auto_size_text: ^3.0.0-nullsafety.0 # Helper to adjust text
+  font_awesome_flutter: ^9.1.0  # Font awesome icons
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.4
+  test:
+
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
+    - assets/pokedex/
+
+  fonts:
+    - family: Opensans
+      fonts:
+        - asset: assets/fonts/opensanssemibold.ttf
