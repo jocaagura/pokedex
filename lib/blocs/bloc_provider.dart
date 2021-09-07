@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:rxdart/rxdart.dart';
 
@@ -21,6 +20,7 @@ class BlocProvider {
   Widget _cover = Image.asset('assets/logo.png');
 
   set cover(Widget tmp) {
+    print('Seteado');
     _cover = tmp;
   }
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/footer_widget.dart';
-import '../widgets/main_container_widget.dart';
+import '../widgets/main_container_tv_desktop_widget.dart';
 import '../widgets/title_widget.dart';
 
 class PortraitTvDisplayPage extends StatelessWidget {
@@ -9,8 +9,12 @@ class PortraitTvDisplayPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [TitleWidget(), MainContainer(), FooterContainer()],
+    return Column(
+      children: [
+        TitleWidget(),
+        MainContainerTvDesktopWidget(),
+        FooterContainer()
+      ],
     );
   }
 }

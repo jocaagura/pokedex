@@ -17,7 +17,7 @@ class PortraitMovilDisplayPage extends StatelessWidget {
           Container(),
           TitleWidget(),
           MainContainer(),
-          FooterContainer()
+          FooterContainer(),
         ],
       ),
     );
