@@ -224,6 +224,12 @@ class __PokemonButtonWidgetState extends State<_PokemonButtonWidget> {
                   widget.pokemonAsset,
                 )
               : ColorFiltered(
+              colorFilter: ColorFilter.mode(Colors.black, BlendMode.modulate),
+              child: Image.asset(
+                widget.pokemonAsset,
+              )),
+          /*
+              : ColorFiltered(
                   colorFilter: ColorFilter.matrix([
                     0.2126,
                     0.7152,
@@ -249,6 +255,8 @@ class __PokemonButtonWidgetState extends State<_PokemonButtonWidget> {
                   child: Image.asset(
                     widget.pokemonAsset,
                   )),
+
+           */
         ),
       ),
     );
